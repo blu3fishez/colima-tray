@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.blu3fishez"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -26,6 +26,7 @@ tasks.withType<JavaCompile> {
 }
 
 application {
+    mainModule.set("org.blu3fishez.colima_tray.app")
     mainClass.set("org.blu3fishez.colima_tray.ColimaGuiApplication")
 }
 
@@ -51,9 +52,10 @@ tasks.jar {
 }
 
 jlink {
+
     imageZip.set(layout.buildDirectory.file("/distributions/app-image.zip"))
     options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
     launcher {
-        name = "app"
+        name = "ColimaTrayApp"
     }
 }
