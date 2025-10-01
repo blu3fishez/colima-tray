@@ -1,8 +1,10 @@
-[English](./docs/README.en.md)
+<p align="center">
+<a href="https://github.com/blu3fishez/colima-tray/blob/main/docs/README.en.md">English</a>
+</p>
 
 # A Tray Application for [colima](https://github.com/abiosoft/colima)
 
-> [!note] Usage Notes
+> [!NOTE]
 >
 > This version is still a prototype and requires feedback from many users.
 >
