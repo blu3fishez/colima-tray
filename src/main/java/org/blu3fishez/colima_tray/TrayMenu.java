@@ -77,6 +77,7 @@ public class TrayMenu {
             }
         };
 
+        // TODO: We need to check the colima status only before when we open the tray menu.
         scheduleService.scheduleAtFixedRate(statusUpdater, 0, 5, TimeUnit.SECONDS);
     }
 
